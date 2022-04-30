@@ -9,6 +9,7 @@ import logging
 import aiohttp
 
 
+
 async def render_page(message_id, secure_hash):
     file_data=await get_file_ids(StreamBot, int(Var.BIN_CHANNEL), int(message_id))
     if file_data.unique_id[:6] != secure_hash:
