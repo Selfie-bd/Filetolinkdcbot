@@ -36,3 +36,4 @@ async def render_page(message_id, secure_hash):
                     html = (await r.read()) % (heading, file_data.file_name, src, file_size)
     return html
 
+
