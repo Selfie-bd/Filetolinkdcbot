@@ -109,8 +109,8 @@ async def private_receive_handler(c: Client, m: Message):
         stream_link = f"{Var.URL}watch/{str(log_msg.message_id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         stream_linkk = f"https://linksearn.site/st?api=8b088f1bec72e5db45502b832a1116b99e11e876&url={stream_link}"
         
-        online_link = f"{Var.URL}{str(log_msg.message_id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-        online_linkk = "https://linksearn.site/st?api=8b088f1bec72e5db45502b832a1116b99e11e876&url={online_link}"
+        online_link = "{Var.URL}{str(log_msg.message_id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+        online_linkk = "https://linksearn.site/st?api=8b088f1bec72e5db45502b832a1116b99e11e876&url="+ online_link
         online_linkkk = get_shortlink(online_linkk)
         
 
