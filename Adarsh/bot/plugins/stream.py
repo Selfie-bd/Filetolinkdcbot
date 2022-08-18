@@ -10,6 +10,7 @@ from urllib.parse import quote_plus
 from pyrogram import filters, Client
 from pyrogram.errors import FloodWait, UserNotParticipant
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
+from pyshorteners import Shortener
 
 from Adarsh.utils.file_properties import get_name, get_hash, get_media_file_size
 db = Database(Var.DATABASE_URL, Var.SESSION_NAME)
@@ -19,6 +20,14 @@ MY_PASS = os.environ.get("MY_PASS",None)
 pass_dict = {}
 pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 
+def get_shortlink(url):
+   shortlink = False 
+   try:
+      shortlink = Shortener().dagd.short(url)
+   except Exception as err:
+       print(err)
+       pass
+   return shortlink
 
 @StreamBot.on_message((filters.regex("login🔑") | filters.command("login")) & ~filters.edited, group=4)
 async def login_handler(c: Client, m: Message):
@@ -98,10 +107,11 @@ async def private_receive_handler(c: Client, m: Message):
 
         log_msg = await m.forward(chat_id=Var.BIN_CHANNEL)
         stream_link = f"{Var.URL}watch/{str(log_msg.message_id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+        stream_linkk = f"https://linksearn.site/st?api=8b088f1bec72e5db45502b832a1116b99e11e876&url={stream_link}"
         
         online_link = f"{Var.URL}{str(log_msg.message_id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-       
-        
+        online_linkk = "https://linksearn.site/st?api=8b088f1bec72e5db45502b832a1116b99e11e876&url={online_link}"
+        online_linkkk = get_shortlink(online_linkk)
         
 
         msg_text ="""
@@ -119,7 +129,7 @@ async def private_receive_handler(c: Client, m: Message):
 
         await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**Stream ʟɪɴᴋ :** {stream_link}", disable_web_page_preview=True, parse_mode="Markdown", quote=True)
         await m.reply_text(
-            text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_link, stream_link),
+            text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_linkkk, online_linkkk),
             parse_mode="HTML", 
             quote=True,
             disable_web_page_preview=True,
