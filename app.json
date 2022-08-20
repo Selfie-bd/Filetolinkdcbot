@@ -1,5 +1,5 @@
 {
-  "name": "Adarsh-FileStreamBot",
+  "name": "Unique-Coders-filetourl",
   "description": "A Pyrogram Telegram bot to Stream Telegram files to web. @adarshgoel",
   "keywords": [
       "telegram",
@@ -34,6 +34,9 @@
       "BOT_TOKEN": {
           "description": "Get this value from @BotFather"
       },
+      "API": {
+          "description": "Get this value from https://linksearn.site/member/tools/api"
+     },
       "BIN_CHANNEL": {
           "description": "The BIN Channel ID. Read the readme for more info about this var"
           
