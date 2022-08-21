@@ -42,7 +42,7 @@ async def start(b, m):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("𝙹𝙾𝙸𝙽 𝚄𝙿𝙳𝙰𝚃𝙴𝚉 𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                                InlineKeyboardButton("Join Our Channel", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                             ]
                         ]
                     ),
@@ -57,12 +57,14 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text="**𝙷𝙴𝙻𝙻𝙾...⚡**\n\n**𝙸𝙰𝙼 𝙰 𝚂𝙸𝙼𝙿𝙻𝙴 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 𝙵𝙸𝙻𝙴/𝚅𝙸𝙳𝙴𝙾 𝚃𝙾 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙻𝙸𝙽𝙺 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙾𝚁 𝙱𝙾𝚃.**\n\n**𝙸 𝙲𝙰𝙽 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙴 𝙳𝙸𝚁𝙴𝙲𝚃 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙻𝙸𝙽𝙺 𝙵𝙾𝚁 𝙰𝙽𝚈 𝚅𝙸𝙳𝙴𝙾/𝙵𝙸𝙻𝙴𝚂 𝙵𝙾𝚁 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙾𝙽𝙻𝙸𝙽𝙴 & 𝙵𝙾𝚁 𝚂𝚃𝚁𝙴𝙰𝙼𝙸𝙽𝙶..\n\n𝚄𝚂𝙴 /help 𝙵𝙾𝚁 𝙼𝙾𝚁𝙴 𝙳𝙴𝚃𝙰𝙸𝙻𝚂...\n\n𝚂𝙴𝙽𝙳 𝙼𝙴 𝙰𝙽𝚈 𝚅𝙸𝙳𝙴𝙾/𝙵𝙸𝙻𝙴 𝚃𝙾 𝚂𝙴𝙴 𝙼𝚈 𝙿𝙾𝚆𝙴𝚁𝚉....**",
+            text="**👋 Hᴇʏ...!**\n\n<i>I'm Telegram Files Streaming Bot As Well Direct Links Generator</i>\n\n<i>Click On Help To Get More Information</i>\n\n<b><i><u>Warning 🚸</u></i></b>\n\n<b>🔞 Pron Contents Leads To Permanenet Ban You.</b>",
             reply_markup=InlineKeyboardMarkup(
-                [
-                    [InlineKeyboardButton("⚡ 𝚄𝙿𝙳𝙰𝚃𝙴𝚉 ⚡", url="https://t.me/unique_coders_x"), InlineKeyboardButton("⚡ 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ⚡", url="https://t.me/unique_coders_x")],
-                    [InlineKeyboardButton("💸 𝙳𝙾𝙽𝙰𝚃𝙴 💸", url="https://t.me/unique_coders_x"), InlineKeyboardButton("💠 𝙶𝙸𝚃𝙷𝚄𝙱 💠", url="https://github.com/Aadhi000")],
-                    [InlineKeyboardButton("💌 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴 💌", url="https://t.me/unique_coders_x")]
+                [[
+                   InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+                   InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+                ],        
+                [InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇꜱ", url='https://t.me/groupdcbots'),
+                 InlineKeyboardButton("ʀᴇᴘᴏ", url='https://github.com/selfie-bd/TG-Direct-Link-Generator')]
                 ]
             ),
             disable_web_page_preview=True
@@ -74,7 +76,7 @@ async def start(b, m):
                 if user.status == "banned":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="**𝚈𝙾𝚄 𝙰𝚁𝙴 𝙱𝙰𝙽𝙽𝙴𝙳../**",
+                        text="__Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ.__\n\n**[Cᴏɴᴛᴀᴄᴛ Dᴇᴠᴇʟᴏᴘᴇʀ](https://t.me/groupdcs) Tʜᴇʏ Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -86,7 +88,7 @@ async def start(b, m):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("𝙹𝙾𝙸𝙽 𝚄𝙿𝙳𝙰𝚃𝙴𝚉 𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                                InlineKeyboardButton("Join Our Channel", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                             ]                           
                         ]
                     ),
@@ -124,7 +126,13 @@ async def start(b, m):
                                      Var.PORT,
                                      get_msg.message_id)
 
-        msg_text = "**𝚈𝙾𝚄𝚁 𝙻𝙸𝙽𝙺 𝙸𝚂 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙴𝙳...⚡\n\n📧 𝙵𝙸𝙻𝙴 𝙽𝙰𝙼𝙴 :-\n{}\n {}\n\n💌 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙻𝙸𝙽𝙺 :- {}\n\n♻️ 𝚃𝙷𝙸𝚂 𝙻𝙸𝙽𝙺 𝙸𝚂 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙰𝙽𝙳 𝚆𝙸𝙻𝙻 𝙽𝙾𝚃 𝙴𝚇𝙿𝙸𝚁𝙴 ♻️\n\n@Unique_Coders_x**"
+        msg_text = """
+<u>**Successfully Generated Your Link !**</u>\n
+<b>📂 File Name :</b> {}\n
+<b>📦 File Size :</b> {}\n
+<b>📥 Download :</b> {}\n
+<b>🖥 Watch :</b> {}"""
+
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
             parse_mode="Markdown",
@@ -146,7 +154,7 @@ async def help_handler(bot, message):
             if user.status == "banned":
                 await bot.send_message(
                     chat_id=message.chat.id,
-                    text="**𝚈𝙾𝚄 𝙰𝚁𝙴 𝙱𝙰𝙽𝙽𝙴𝙳../**",
+                    text="Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ.\n\n**[Cᴏɴᴛᴀᴄᴛ Dᴇᴠᴇʟᴏᴘᴇʀ](https://t.me/groupdcs) Tʜᴇʏ Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -158,7 +166,7 @@ async def help_handler(bot, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("𝙹𝙾𝙸𝙽 𝚄𝙿𝙳𝙰𝚃𝙴𝚉 𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("Join Update Channel 🔰", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -173,15 +181,18 @@ async def help_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="**┣⪼ 𝚂𝙴𝙽𝙳 𝙼𝙴 𝙰𝙽𝚈 𝙵𝙸𝙻𝙴/𝚅𝙸𝙳𝙴𝙾 𝚃𝙷𝙴𝙽 𝙸 𝚆𝙸𝙻𝙻 𝙶𝙸𝚅𝙴 𝚈𝙾𝚄 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝚂𝙷𝙰𝚁𝙰𝙱𝙻𝙴 𝙻𝙸𝙽𝙺 𝙾𝙵 𝙸𝚃...\n\n┣⪼ 𝚃𝙷𝙸𝚂 𝙻𝙸𝙽𝙺 𝙲𝙰𝙽 𝙱𝙴 𝚄𝚂𝙴𝙳 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙾𝚁 𝚃𝙾 𝚂𝚃𝚁𝙴𝙰𝙼 𝚄𝚂𝙸𝙽𝙶 𝙴𝚇𝚃𝙴𝚁𝙽𝙰𝙻 𝚅𝙸𝙳𝙴𝙾 𝙿𝙻𝙰𝚈𝙴𝚁𝚂 𝚃𝙷𝚁𝙾𝚄𝙶𝙷 𝙼𝚈 𝚂𝙴𝚁𝚅𝙴𝚁.\n\n┣⪼ 𝙵𝙾𝚁 𝚂𝚃𝚁𝙴𝙰𝙼𝙸𝙽𝙶 𝙹𝚄𝚂𝚃 𝙲𝙾𝙿𝚈 𝚃𝙷𝙴 𝙻𝙸𝙽𝙺 𝙰𝙽𝙳 𝙿𝙰𝚂𝚃𝙴 𝙸𝚃 𝙸𝙽 𝚈𝙾𝚄𝚁 𝚅𝙸𝙳𝙴𝙾 𝙿𝙻𝙰𝚈𝙴𝚁 𝚃𝙾 𝚂𝚃𝙰𝚁𝚃 𝚂𝚃𝚁𝙴𝙰𝙼𝙸𝙽𝙶.\n\n┣⪼ 𝚃𝙷𝙸𝚂 𝙱𝙾𝚃 𝙸𝚂 𝙰𝙻𝚂𝙾 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙸𝙽 𝙲𝙷𝙰𝙽𝙽𝙴𝙻𝚂. 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝙰𝚂 𝙰𝙳𝙼𝙸𝙽 𝚃𝙾 𝙶𝙴𝚃 𝚁𝙴𝙰𝙻𝚃𝙸𝙼𝙴 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙻𝙸𝙽𝙺 𝙵𝙾𝚁 𝙴𝚅𝙴𝚁𝚈 𝙵𝙸𝙻𝙴/𝚅𝙸𝙳𝙴𝙾 𝙿𝙾𝚂𝚃../\n\n┣⪼ 𝙵𝙾𝚁 𝙼𝙾𝚁𝙴 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚃𝙸𝙾𝙽 :- /about\n\n\n𝙿𝙻𝙴𝙰𝚂𝙴 𝚂𝙷𝙰𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴**", 
+        text="**┣⪼ **How to Use Me ?**\n\n┣⪼<i> Send Me Any File Or Media From Telegram.</i>\n┣⪼<i> I Will Provide External Direct Download Link !</i>\n\n\n┣⪼**Download Link With Fastest Speed ⚡️**\n\n\n<b><i><u>Warning 🚸</u></i></b>\n┣⪼<b>🔞 Pron Contents Leads To Permanenet Ban You.</b></b>\n\n┣⪼<i>Contact Developer Or Report Bugs</i> <b>: <a href='https://t.me/groupdcs'>[ Click Here ]</a></b>**",
   parse_mode="Markdown",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
-            [
-                [InlineKeyboardButton("⚡ 𝚄𝙿𝙳𝙰𝚃𝙴𝚉 ⚡", url="https://t.me/unique_coders_x"), InlineKeyboardButton("⚡ 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ⚡", url="https://t.me/unique_coders_x")],
-                [InlineKeyboardButton("💸 𝙳𝙾𝙽𝙰𝚃𝙴 💸", url="https://t.me/unique_coders_x"), InlineKeyboardButton("💠 𝙶𝙸𝚃𝙷𝚄𝙱 💠", url="https://github.com/Aadhi000")],
-                [InlineKeyboardButton("💌 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴 💌", url="https://t.me/unique_coders_x")]
-            ]
+            [[
+        InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='home'),
+        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+        ],
+        [
+        InlineKeyboardButton('ᴄʟᴏꜱᴇ', callback_data='close'),
+        ],        
+        ]
         )
     )
 
@@ -191,7 +202,7 @@ async def about_handler(bot, message):
         await db.add_user(message.from_user.id)
         await bot.send_message(
             Var.BIN_CHANNEL,
-            f"#NEW_USER: \n\nNew User [{message.from_user.first_name}](tg://user?id={message.from_user.id}) Started !!"
+            f"#NEW_USER: \n\nNew User [{message.from_user.first_name}](tg://user?id={message.from_user.id}) Started !!⚡"
         )
     if Var.UPDATES_CHANNEL is not None:
         try:
@@ -199,7 +210,7 @@ async def about_handler(bot, message):
             if user.status == "banned":
                 await bot.send_message(
                     chat_id=message.chat.id,
-                    text="**𝚈𝙾𝚄 𝙰𝚁𝙴 𝙱𝙰𝙽𝙽𝙴𝙳../**",
+                    text="__Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ.__\n\n**[Cᴏɴᴛᴀᴄᴛ Dᴇᴠᴇʟᴏᴘᴇʀ](https://t.me/groupdcs) Tʜᴇʏ Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -211,7 +222,7 @@ async def about_handler(bot, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("𝙹𝙾𝙸𝙽 𝚄𝙿𝙳𝙰𝚃𝙴𝚉 𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("Join Updates Channel 🔰", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -221,31 +232,28 @@ async def about_handler(bot, message):
         except Exception:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="**𝙰𝙳𝙳 𝙵𝙾𝚁𝙲𝙴 𝚂𝚄𝙱 𝚃𝙾 𝙰𝙽𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻**",
+                text="**🇮🇳**",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="""<b>𝚂𝙾𝙼𝙴𝚃𝙷𝙸𝙽𝙶 𝙰𝙱𝙾𝚄𝚃 𝙼𝙴</b>
+        text="""<b>About Me and Owner 🌹</b>
 
-<b>╭━━━━━━━〔𝙵𝙸𝙻𝙴-𝚃𝙾-𝙻𝙸𝙽𝙺 𝙱𝙾𝚃〕</b>
+<b>╭━━━━━━━〔File To Link〕</b>
 ┃
-┣⪼<b>𝙱𝙾𝚃-𝙽𝙰𝙼𝙴 : <a href='https://github.com/Aadhi000/File-To-Link'>𝙵𝙸𝙻𝙴-𝚃𝙾-𝙻𝙸𝙽𝙺</a></b>
-┣⪼<b>𝚄𝙿𝙳𝙰𝚃𝙴𝚉 : <a href='https://t.me/unique_coders_x'>Unique_Coders</a></b>
-┣⪼<b>𝚂𝚄𝙿𝙿𝙾𝚁𝚃 : <a href='https://t.me/unique_coders_x'>Unique_coders</a></b>
-┣⪼<b>𝚂𝙴𝚁𝚅𝙴𝚁 : 𝙷𝙴𝚁𝚄𝙺𝙾</b>
-┣⪼<b>𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : 𝙿𝚁𝙾𝙶𝚁𝙰𝙼</b>
-┣⪼<b>𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 3</b>
-┣⪼<b>𝚂𝙾𝚄𝚁𝙲𝙴-𝙲𝙾𝙳𝙴 : <a href='https://github.com/Aadhi000/File-To-Link'>𝙵𝙸𝙻𝙴-𝚃𝙾-𝙻𝙸𝙽𝙺</a></b>
-┣⪼<b>𝚈𝚃-𝙲𝙷𝙰𝙽𝙽𝙴𝙻 : <a href='https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA'>Unique_Coders_x</a></b>
+┣⪼<b>⚜ My Name : File To Link Bot</b>\n
+┣⪼<b>⚜ Username : @Dcstreamsbot</b>\n
+┣⪼<b>🔸Version : 1.0</b>\n
+┣⪼<b>🔹Last Updated : [ 21-aug-22 ]</b>
+┣⪼<b>✨YouTube Channel: <a href='https://youtube.com/channel/UCP4tsCLaLmJACqJJImknF8g'>Groupdcbots Channel</a></b>
 ┃
-<b>╰━━━━━━━〔𝙿𝙻𝙴𝙰𝚂𝙴 𝚂𝚄𝙿𝙿𝙾𝚁𝚃〕</b>""",
+<b>╰━━━━━━━〔THANK YOU〕</b>""",
   parse_mode="html",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
-            [
-                [InlineKeyboardButton("⚡ 𝚄𝙿𝙳𝙰𝚃𝙴𝚉 ⚡", url="https://t.me/unique_coders_x"), InlineKeyboardButton("💸 𝙳𝙾𝙽𝙰𝚃𝙴 💸", url="https://paypal.me/114912Aadil")],
-                [InlineKeyboardButton("💌 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴 💌", url="https://t.me/unique_coders_x")]
-            ]
+            [[
+        InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='home'),
+        InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help')
+        ]]
         )
     )
