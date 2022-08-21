@@ -64,7 +64,7 @@ async def start(b, m):
                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
                 ],        
                 [InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇꜱ", url='https://t.me/groupdcbots'),
-                 InlineKeyboardButton("ʀᴇᴘᴏ", url='https://github.com/selfie-bd/TG-Direct-Link-Generator')]
+                 InlineKeyboardButton("ʀᴇᴘᴏ", url='https://github.com/selfie-bd/FileToLinkDcBot')]
                 ]
             ),
             disable_web_page_preview=True
@@ -181,12 +181,12 @@ async def help_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="**┣⪼ **How to Use Me ?**\n\n┣⪼<i> Send Me Any File Or Media From Telegram.</i>\n┣⪼<i> I Will Provide External Direct Download Link !</i>\n\n\n┣⪼**Download Link With Fastest Speed ⚡️**\n\n\n<b><i><u>Warning 🚸</u></i></b>\n┣⪼<b>🔞 Pron Contents Leads To Permanenet Ban You.</b></b>\n\n┣⪼<i>Contact Developer Or Report Bugs</i> <b>: <a href='https://t.me/groupdcs'>[ Click Here ]</a></b>**",
+        text="**⪼ **How to Use Me ?**\n\n⪼ Send Me Any File Or Media From Telegram.\n⪼ I Will Provide External Direct Download Link !\n\n\n⪼Download Link With Fastest Speed ⚡️\n\n\nWarning ⚠️\n⪼ 🔞 Pron Contents Leads To Permanenet Ban You.\n\n⪼ Contact Developer Or Report Bugs : @groupdcs**",
   parse_mode="Markdown",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [[
-        InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='home'),
+        InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
         InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
         ],
         [
@@ -241,9 +241,9 @@ async def about_handler(bot, message):
 
 <b>╭━━━━━━━〔File To Link〕</b>
 ┃
-┣⪼<b>⚜ My Name : File To Link Bot</b>\n
-┣⪼<b>⚜ Username : @Dcstreamsbot</b>\n
-┣⪼<b>🔸Version : 1.0</b>\n
+┣⪼<b>⚜ My Name : File To Link Bot</b>
+┣⪼<b>⚜ Username : @Dcstreamsbot</b>
+┣⪼<b>🔸Version : 3.1.2</b>
 ┣⪼<b>🔹Last Updated : [ 21-aug-22 ]</b>
 ┣⪼<b>✨YouTube Channel: <a href='https://youtube.com/channel/UCP4tsCLaLmJACqJJImknF8g'>Groupdcbots Channel</a></b>
 ┃
@@ -252,7 +252,7 @@ async def about_handler(bot, message):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [[
-        InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='home'),
+        InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
         InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help')
         ]]
         )
