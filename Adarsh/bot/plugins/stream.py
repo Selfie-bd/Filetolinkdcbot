@@ -16,7 +16,7 @@ from Adarsh.utils.file_properties import get_name, get_hash, get_media_file_size
 db = Database(Var.DATABASE_URL, Var.SESSION_NAME)
  
 
-MY_PASS = os.environ.get("MY_PASS",None)
+MY_PASS = os.environ.get("MY_PASS",'Dcstreambot')
 pass_dict = {}
 pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 
@@ -33,7 +33,7 @@ def get_shortlink(url):
 async def login_handler(c: Client, m: Message):
     try:
         try:
-            ag = await m.reply_text("Now send me password.\n\n If You don't know check the MY_PASS Variable in heroku \n\n(You can use /cancel command to cancel the process)")
+            ag = await m.reply_text("Now send me password.\n\n If You don't know check the MY_PASS Variable in @DcStreambot (request here)\n\n(You can use /cancel command to cancel the process)")
             _text = await c.listen(m.chat.id, filters=filters.text, timeout=90)
             if _text.text:
                 textp = _text.text
@@ -43,13 +43,13 @@ async def login_handler(c: Client, m: Message):
             else:
                 return
         except TimeoutError:
-            await ag.edit("I can't wait more for password, try again")
+            await ag.edit("I can't wait more for password, try again, request it from @DcStreambot")
             return
         if textp == MY_PASS:
             await pass_db.add_user_pass(m.chat.id, textp)
-            ag_text = "yeah! you entered the password correctly"
+            ag_text = "yeah! you entered the password correctly. Enjoy Your Life 😜"
         else:
-            ag_text = "Wrong password, try again"
+            ag_text = "Wrong password, try again, request it from @DcStreambot"
         await ag.edit(ag_text)
     except Exception as e:
         print(e)
@@ -59,7 +59,7 @@ async def private_receive_handler(c: Client, m: Message):
     if MY_PASS:
         check_pass = await pass_db.get_user_pass(m.chat.id)
         if check_pass== None:
-            await m.reply_text("Login first using /login cmd \nDon't know the password contact @ArjunVR_AVR")
+            await m.reply_text("Login first using /login cmd \nDon't know the password contact request it from @DcStreambot")
             return
         if check_pass != MY_PASS:
             await pass_db.delete_user(m.chat.id)
@@ -88,7 +88,7 @@ async def private_receive_handler(c: Client, m: Message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("𝙹𝙾𝙸𝙽 𝚄𝙿𝙳𝙰𝚃𝙴𝚉 𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("Join Now", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -107,33 +107,33 @@ async def private_receive_handler(c: Client, m: Message):
 
         log_msg = await m.forward(chat_id=Var.BIN_CHANNEL)
         stream_link = f"{Var.URL}watch/{str(log_msg.message_id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-        stream_linkk = f"https://linksearn.site/st?api=d76de9185cde355a73eac36be4d00ea94045859a&url={stream_link}"
+        stream_linkk = f"https://linksearn.site/st?api={Var.API}&url={stream_link}"
         
         online_link = f"https://linksearn.site/st?api={Var.API}&url={Var.URL}{str(log_msg.message_id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         online_linkkk = get_shortlink(online_link)
         
 
         msg_text ="""
-<b>𝚈𝙾𝚄𝚁 𝙻𝙸𝙽𝙺 𝙸𝚂 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙴𝙳...⚡
+<b> Successfully Generated Your Link !
 
-<b>📧 𝙵𝙸𝙻𝙴 𝙽𝙰𝙼𝙴 :- </b> <i><b>{}</b></i>
+<b>📧 File Name :- </b> <i><b>{}</b></i>
 
-<b>📦 𝙵𝙸𝙻𝙴 𝚂𝙸𝚉𝙴 :- </b> <i><b>{}</b></i>
+<b>📦 File Size :- </b> <i><b>{}</b></i>
 
-<b>💌 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙻𝙸𝙽𝙺 :- </b> <i><b>{}</b></i>
+<b>💌 Download :- </b> <i><b>{}</b></i>
 
-<b>🖥 𝚆𝙰𝚃𝙲𝙷 𝙾𝙽𝙻𝙸𝙽𝙴 :- </b> <i><b>{}</b></i>
+<b>🖥 Watch :- </b> <i><b>{}</b></i>
 
-<b>♻️ 𝚃𝙷𝙸𝚂 𝙻𝙸𝙽𝙺 𝙸𝚂 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙰𝙽𝙳 𝚆𝙸𝙻𝙻 𝙽𝙾𝚃 𝙴𝚇𝙿𝙸𝚁𝙴 ♻️\n\n @Unique_coders_x</b>"""
+<b>♻️ 𝚃𝙷𝙸𝚂 𝙻𝙸𝙽𝙺 𝙸𝚂 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙰𝙽𝙳 𝚆𝙸𝙻𝙻 𝙽𝙾𝚃 𝙴𝚇𝙿𝙸𝚁𝙴 ♻️</b>"""
 
-        await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**Stream ʟɪɴᴋ :** {stream_link}", disable_web_page_preview=True, parse_mode="Markdown", quote=True)
+        await log_msg.reply_text(text=f"**Request By:** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**User I'd :** `{m.from_user.id}`\n**Stream Link :** {stream_link}", disable_web_page_preview=True, parse_mode="Markdown", quote=True)
         await m.reply_text(
             text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_linkkk, online_linkkk),
             parse_mode="HTML", 
             quote=True,
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⚡ 𝚆𝙰𝚃𝙲𝙷 ⚡", url=online_linkkk), #Stream Link
-                                                InlineKeyboardButton('⚡ 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 ⚡', url=online_linkkk)]]) #Download Link
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Watch Now 🎦", url=online_linkkk), #Stream Link
+                                                InlineKeyboardButton('Download Link 📥', url=online_linkkk)]]) #Download Link
         )
     except FloodWait as e:
         print(f"Sleeping for {str(e.x)}s")
@@ -146,10 +146,10 @@ async def channel_receive_handler(bot, broadcast):
     if MY_PASS:
         check_pass = await pass_db.get_user_pass(broadcast.chat.id)
         if check_pass == None:
-            await broadcast.reply_text("Login first using /login cmd \n don\'t know the pass? request it from @agprojects")
+            await broadcast.reply_text("Login first using /login cmd \n don\'t know the pass? request it from @DcStreambot")
             return
         if check_pass != MY_PASS:
-            await broadcast.reply_text("Wrong password, login again")
+            await broadcast.reply_text("Wrong password, login again ,request it from @DcStreambot")
             await pass_db.delete_user(broadcast.chat.id)
             return
     if int(broadcast.chat.id) in Var.BANNED_CHANNELS:
@@ -169,8 +169,8 @@ async def channel_receive_handler(bot, broadcast):
             message_id=broadcast.message_id,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("⚡ 𝚆𝙰𝚃𝙲𝙷 ⚡", url=stream_link),
-                     InlineKeyboardButton('⚡ 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 ⚡', url=online_link)] 
+                    [InlineKeyboardButton("Download Now ⚡", url=stream_link),
+                     InlineKeyboardButton('Watch Now 🎦', url=online_link)] 
                 ]
             )
         )
