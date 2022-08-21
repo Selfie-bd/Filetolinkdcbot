@@ -1,27 +1,6 @@
-**<h1 align="center">𝚃𝙶 𝙵𝙸𝙻𝙴 𝚃𝙾 𝙻𝙸𝙽𝙺 𝙱𝙾𝚃</h1>**
-<p align="center">
-  <a href="https://youtu.be/W4wSOZw8GXk">
-    <img src="https://telegra.ph/file/a2303826e0c6d18bf9cab.jpg">
-  </a>
-  <p align="center">
-    𝙸 𝙲𝙰𝙽 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙴 𝙳𝙸𝚁𝙴𝙲𝚃 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙻𝙸𝙽𝙺 𝙵𝙾𝚁 𝙰𝙽𝚈 𝚅𝙸𝙳𝙴𝙾/𝙵𝙸𝙻𝙴𝚂 𝙵𝙾𝚁 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙾𝙽𝙻𝙸𝙽𝙴 & 𝙵𝙾𝚁 𝚂𝚃𝚁𝙴𝙰𝙼𝙸𝙽𝙶...
-    <br />
-    <a href="https://telegram.dog/OPFileToLinkBot"><strong>𝙵𝙸𝙻𝙴 𝚃𝙾 𝙻𝙸𝙽𝙺 𝙱𝙾𝚃 »</strong></a>
-    <br />
-  </p>
-  <p align="center">
-  <a href="https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA">
-        <img src="https://img.shields.io/badge/𝐒𝐔𝐁𝐒𝐂𝐑𝐈𝐁𝐄-red?logo=youtube" width="200">
-  </p>
-<hr>
-  
+
 ## About This Bot
 
-<p align="center">
-    <a href="https://github.com/Aadhi000/File-To-Link">
-        <img src="https://www.flaticon.com/premium-icon/icons/svg/2626/2626281.svg" height="100" width="100" alt="Telegram Logo">
-    </a>
-</p>
 <p align='center'>
     This bot will give you stream links for Telegram files without the need of waiting till the download completes
 </p>
@@ -34,36 +13,36 @@ Either you could locally host or deploy on [Heroku](https://heroku.com)
 
 Press the below button to Fast deploy on Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/NewAlpha9/File-To-Link-1)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/selfie-bd/Filetolinkdcbot)
 
 
 🚀Features<p>
-💥Superfast⚡️ download and stream links.<br>
-💥No ads in generated links.<br>
-💥Superfast interface.<br>
-💥Along with the links you also get file information like name,size ,etc.<br>
-💥Updates channel Support.<br>
-💥Mongodb database support for broadcasting.<br>
-💥Password Protection.<br>
-💥User Freindly Interface.<br>
-💥Ping check.<br>
-💥User DC Check.<br>
-💥Real time CPU , RAM , Internet usage. <br>
-💥Custom Domain support. <br>
-💥All unwanted code removed. <br>
-💥A lot more tired of writing check out by deploying it. 
+💥 Short Link Support
+💥 Superfast⚡️ download and stream links.<br>
+💥 Superfast interface.<br>
+💥 Along with the links you also get file information like name,size ,etc.<br>
+💥 Updates channel Support.<br>
+💥 Mongodb database support for broadcasting.<br>
+💥 Password Protection.<br>
+💥 User Freindly Interface.<br>
+💥 Ping check.<br>
+💥 User DC Check.<br>
+💥 Real time CPU , RAM , Internet usage. <br>
+💥 Custom Domain support. <br>
+💥 All unwanted code removed. <br>
+💥 A lot more tired of writing check out by deploying it. 
 </details>
 <details>
   <summary><b>Host it on VPS Locally :</b></summary>
 
 
 ```py
-git clone https://github.com/adarsh-goel/Filestreambot-pro
-cd Filestreambot-pro
+git clone https://github.com/selfie-bd/Filetolinkdcbot
+cd Filetolinkdcbot
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
 pip install -r requirements.txt
-python3 -m Adarsh
+python3 -m main
 ```
 
 and to stop the whole bot,
@@ -80,6 +59,7 @@ API_ID=12345
 API_HASH=esx576f8738x883f3sfzx83
 BOT_TOKEN=55838383:yourtbottokenhere
 BIN_CHANNEL=-100
+API = dc(short link api)
 PORT=8080
 FQDN=your_server_ip
 OWNER_ID=your_user_id
@@ -95,6 +75,8 @@ DATABASE_URL=mongodb_uri
 `API_HASH` : Goto [my.telegram.org](https://my.telegram.org) to obtain this.
   
 `MY_PASS` : Bot PASSWORD
+
+`API` : Short Link site api
 
 `BOT_TOKEN` : Get the bot token from [@BotFather](https://telegram.dog/BotFather)
 
@@ -136,10 +118,6 @@ DATABASE_URL=mongodb_uri
 To get an instant stream link, just forward any media to the bot and boom, its fast af.
   
 ![image](https://user-images.githubusercontent.com/88939380/145798095-3cdad108-96b0-4391-a540-cad144d6b864.png)
-
-
-### Channel Support
-Bot also Supported with Channels. Just add bot Channel as Admin. If any new file comes in Channel it will edit it with **Get Download Link** Button. </details>
 
 ### Credits : 
 
