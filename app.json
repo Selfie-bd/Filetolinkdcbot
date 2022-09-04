@@ -35,7 +35,7 @@
           "description": "Get this value from @BotFather"
       },
       "API": {
-          "description": "Get this value from https://linksearn.site/ref/Selfiebd or your short link site."
+          "description": "Get this value from https://linksearn.site/ref/Selfiebd or (if you want any other site try to change stream.py or contact @zeusbotsnetwork on telegram)."
      },
       "BIN_CHANNEL": {
           "description": "The BIN Channel ID. Read the readme for more info about this var"
