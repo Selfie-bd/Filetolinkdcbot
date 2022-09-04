@@ -1,10 +1,10 @@
 {
-  "name": "Unique-Coders-filetourl",
-  "description": "A Pyrogram Telegram bot to Stream Telegram files to web. @adarshgoel",
+  "name": "File To URL Bot",
+  "description": "A Pyrogram Telegram bot to Stream Telegram files to web.With custom short link support.",
   "keywords": [
       "telegram",
       "stream",
-      "web",
+      "Shortlink",
       "pyrogram",
       "aiohttp",
       "python",
@@ -13,10 +13,10 @@
       "media",
       "bot"
     ],
-  "repository": "https://github.com/adarsh-goel/FileStreamBot-pro/",
+  "repository": "",
   "success_url": "/",
-  "logo": "https://i.ibb.co/MnMZ1Sy/download-1.jpg",
-  "website": "http://adarsh.eu.org",
+  "logo": "",
+  "website": "",
   "env": {
       "ENV": {
           "description": "Set this to True if you don't want to crash the bot",
@@ -35,7 +35,7 @@
           "description": "Get this value from @BotFather"
       },
       "API": {
-          "description": "Get this value from https://linksearn.site/member/tools/api"
+          "description": "Get this value from https://linksearn.site/ref/Selfiebd or your short link site."
      },
       "BIN_CHANNEL": {
           "description": "The BIN Channel ID. Read the readme for more info about this var"
