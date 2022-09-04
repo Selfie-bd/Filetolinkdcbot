@@ -63,8 +63,8 @@ async def start(b, m):
                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
                 ],        
-                [InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇꜱ", url='https://t.me/groupdcbots'),
-                 InlineKeyboardButton("ʀᴇᴘᴏ", url='https://github.com/selfie-bd/FileToLinkDcBot')]
+                [InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇꜱ", url='https://t.me/OWNER_OF_STARK'),
+                 InlineKeyboardButton("ʀᴇᴘᴏ", url='https://github.com/Selfie-bd/Filetolinkdcbot')]
                 ]
             ),
             disable_web_page_preview=True
@@ -76,7 +76,7 @@ async def start(b, m):
                 if user.status == "banned":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="__Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ.__\n\n**[Cᴏɴᴛᴀᴄᴛ Dᴇᴠᴇʟᴏᴘᴇʀ](https://t.me/groupdcs) Tʜᴇʏ Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
+                        text="__Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ.__\n\n**[Cᴏɴᴛᴀᴄᴛ Dᴇᴠᴇʟᴏᴘᴇʀ](https://t.me/OWNER_OF_STARK) Tʜᴇʏ Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -242,7 +242,7 @@ async def about_handler(bot, message):
 <b>╭━━━━━━━〔File To Link〕</b>
 ┃
 ┣⪼<b>⚜ My Name : File To Link Bot</b>
-┣⪼<b>⚜ Username : @Dcstreamsbot</b>
+┣⪼<b>⚜ Update : @{Var.UPDATES_CHANNEL}</b>
 ┣⪼<b>🔸Version : 3.1.2</b>
 ┣⪼<b>🔹Last Updated : [ 21-aug-22 ]</b>
 ┣⪼<b>✨YouTube Channel: <a href='https://youtube.com/channel/UCP4tsCLaLmJACqJJImknF8g'>Groupdcbots Channel</a></b>
