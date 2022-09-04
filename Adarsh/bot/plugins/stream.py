@@ -1,4 +1,5 @@
-#(c) Adarsh-Goel
+#(©)Adarsh-Goel
+#(®)Selfie-bd
 import os
 import asyncio
 from asyncio import TimeoutError
