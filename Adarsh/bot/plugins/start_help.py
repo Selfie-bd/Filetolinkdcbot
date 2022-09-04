@@ -63,7 +63,7 @@ async def start(b, m):
                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
                 ],        
-                [InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇꜱ", url='https://t.me/OWNER_OF_STARK'),
+                [InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇꜱ", url='https://t.me/zeusbotsnetwork'),
                  InlineKeyboardButton("ʀᴇᴘᴏ", url='https://github.com/Selfie-bd/Filetolinkdcbot')]
                 ]
             ),
