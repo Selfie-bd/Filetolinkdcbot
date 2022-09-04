@@ -111,7 +111,8 @@ async def private_receive_handler(c: Client, m: Message):
         
         online_link = f"https://linksearn.site/st?api={Var.API}&url={Var.URL}{str(log_msg.message_id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         online_linkkk = get_shortlink(online_link)
-        
+
+#short link support added ✅
 
         msg_text ="""
 <b> Successfully Generated Your Link !
