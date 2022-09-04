@@ -1,36 +1,35 @@
 
-## About This Bot
+## Telegram File To Link Generator Bot 
 
 <p align='center'>
-    This bot will give you stream links for Telegram files without the need of waiting till the download completes
+    This bot will give you stream links for Telegram files without the need of waiting till the download completes with short link support.
 </p>
 
 ## How to make your own
 
 Either you could locally host or deploy on [Heroku](https://heroku.com)
 
-### Deploy on Heroku
-
+### Deploy on Heroku 🤖
 Press the below button to Fast deploy on Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/selfie-bd/Filetolinkdcbot)
 
 
 🚀Features<p>
-💥 Short Link Support
-💥 Superfast⚡️ download and stream links.<br>
-💥 Superfast interface.<br>
-💥 Along with the links you also get file information like name,size ,etc.<br>
-💥 Updates channel Support.<br>
-💥 Mongodb database support for broadcasting.<br>
-💥 Password Protection.<br>
-💥 User Freindly Interface.<br>
-💥 Ping check.<br>
-💥 User DC Check.<br>
-💥 Real time CPU , RAM , Internet usage. <br>
-💥 Custom Domain support. <br>
-💥 All unwanted code removed. <br>
-💥 A lot more tired of writing check out by deploying it. 
+✓ Short Link Support With this site only https://linksearn.site/ref/Selfiebd 
+✓ Superfast⚡️ download and stream links.<br>
+✓ Superfast interface.<br>
+✓ Along with the links you also get file information like name,size ,etc.<br>
+✓ Updates channel Support.<br>
+✓ Mongodb database support for broadcasting.<br>
+✓ Password Protection.<br>
+✓ User Freindly Interface.<br>
+✓ Ping check.<br>
+✓ User DC Check.<br>
+✓ Real time CPU , RAM , Internet usage. <br>
+✓ Custom Domain support. <br>
+✓ All unwanted code removed. <br>
+✓ A lot more tired of writing check out by deploying it. 
 </details>
 <details>
   <summary><b>Host it on VPS Locally :</b></summary>
@@ -59,7 +58,8 @@ API_ID=12345
 API_HASH=esx576f8738x883f3sfzx83
 BOT_TOKEN=55838383:yourtbottokenhere
 BIN_CHANNEL=-100
-API = dc(short link api)
+API =Short link api
+(if you want any other site try to change stream.py or contact @zeusbotsnetwork on telegram)
 PORT=8080
 FQDN=your_server_ip
 OWNER_ID=your_user_id
@@ -77,6 +77,7 @@ DATABASE_URL=mongodb_uri
 `MY_PASS` : Bot PASSWORD
 
 `API` : Short Link site api
+(if you want any other site try to change stream.py or contact @zeusbotsnetwork on telegram)
 
 `BOT_TOKEN` : Get the bot token from [@BotFather](https://telegram.dog/BotFather)
 
